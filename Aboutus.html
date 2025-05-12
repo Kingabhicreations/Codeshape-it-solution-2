@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Backpack</h2>
+    <ul>
+      <li><a href="main.html">Dashboard</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="pages.html">Pages</a></li>
+      <li><a href="Aboutus.html">About Us</a></li>
+      <li><a href="Login.html">Login/Signup</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="container">
+      <h2>Manage About Us Content</h2>
+      <form id="aboutForm">
+        <label for="aboutText" class="visually-hidden">About Us Content</label>
+        <textarea id="aboutText" required>This is your current About Us content. You can edit this text and save changes.</textarea>
+        <button type="submit">Save Changes</button>
+        <div class="message" id="saveMessage"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script4.js"></script>
+</body>
+</html>

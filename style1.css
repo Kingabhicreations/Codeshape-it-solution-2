@@ -1,0 +1,54 @@
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .sidebar {
+      width: 240px;
+      background: #f8f9fa;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 1rem 1rem 1rem 1rem;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      padding: 15px 20px;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+    }
+
+    .sidebar ul li:hover {
+      background: #e0e0e0;
+    }
+
+    main {
+      margin-left: 240px;
+      padding: 2rem;
+    }
+
+    .card-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+    }

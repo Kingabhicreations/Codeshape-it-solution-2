@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - Pages</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Backpack</h2>
+    <ul>
+      <li><a href="main.html">Dashboard</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="pages.html">Pages</a></li>
+      <li><a href="Aboutus.html">About Us</a></li>
+      <li><a href="Login.html">Login/Signup</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="container">
+      <h2>Page Management</h2>
+
+      <form id="pageForm">
+        <div class="form-group">
+          <label for="pageTitle">Page Title:</label>
+          <input type="text" id="pageTitle" required>
+        </div>
+        <div class="form-group">
+          <label for="pageSlug">Page Slug (URL):</label>
+          <input type="text" id="pageSlug" required>
+        </div>
+        <button type="submit" class="btn-add">Add Page</button>
+      </form>
+
+      <table id="pagesTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Slug</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>About Us</td>
+            <td>/about-us</td>
+            <td>
+              <button class="btn-edit" onclick="editPage(this)">Edit</button>
+              <button class="btn-delete" onclick="deletePage(this)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script3.js"></script>
+</body>
+</html>
